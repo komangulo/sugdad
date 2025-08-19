@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Heart, Globe, Gift, Plane, Lock } from 'lucide-react';
 import Logo from '@/components/Logo';
+import profileImage from '@/assets/images/profile.jpg';
 
 const Index: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -60,10 +61,7 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/luxury-background.jpg')] bg-cover bg-center opacity-30"></div>
-        
+      <header className="relative h-screen flex items-center justify-center overflow-hidden bg-black/90">
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wide">
             <span className="text-gold-400">Sugar Daddy Madrid</span>
@@ -94,7 +92,7 @@ const Index: React.FC = () => {
           <div className="md:w-1/3">
             <div className="rounded-full overflow-hidden border-4 border-gold-500 w-64 h-64 mx-auto">
               <img 
-                src="/lovable-uploads/msd681f9ad7b6f843.87503140.jpg" 
+                src={profileImage}
                 alt="Perfil"
                 className="w-full h-full object-cover"
               />
