@@ -17,7 +17,7 @@ const Index: React.FC = () => {
     setStatus('Enviando...');
     
     try {
-      const response = await fetch('https://formspree.io/f/xnnzykpg', {
+      const response = await fetch('https://formspree.io/f/xldwrvkr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
