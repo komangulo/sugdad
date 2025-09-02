@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Heart, Globe, Gift, Plane, Lock } from 'lucide-react';
 import Logo from '@/components/Logo';
 import profileImage from '@/assets/images/profile.jpg';
+import FaqSection from '@/components/FaqSection';
 
 const Index: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -63,17 +64,17 @@ const Index: React.FC = () => {
       {/* Hero Section */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden bg-black/90">
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wide">
-            <span className="text-gold-400">Sugar Daddy Madrid</span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wide">
+            <span className="text-gold-400">Sugar Daddy Madrid <span className="text-sm align-top">®</span> | Experiencias Exclusivas en la Capital</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
-            Generosidad, Experiencias y Compañía Exclusiva
+            Generosidad, Experiencias y Compañía Exclusiva - Sugar Daddy Madrid
           </p>
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-            Para mujeres jóvenes que buscan un hombre maduro (36 años), exitoso y generoso que valore tu compañía y esté dispuesto a ofrecerte un estilo de vida de lujo junto a alguien dominante y experimentado.
+            Para mujeres jóvenes que buscan un hombre maduro (36 años), exitoso y generoso que valore tu compañía y esté dispuesto a ofrecerte un estilo de vida de lujo junto a alguien dominante y experimentado como Suggar Daddy en Madrid
           </p>
           <a 
-            href="#contacto" 
+            href="http://localhost:8081/#"
             className="bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-flex items-center"
           >
             <Mail className="mr-2" size={20} /> Contáctame
@@ -82,10 +83,31 @@ const Index: React.FC = () => {
       </header>
 
       {/* About Me Section */}
-      <section className="py-20 px-4 max-w-5xl mx-auto">
+      <section id="que-es" className="py-20 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Sobre Mí</h2>
+          <h2 className="text-4xl font-bold mb-4">¿Qué es un Sugar Daddy en Madrid?</h2>
           <div className="w-24 h-1 bg-gold-500 mx-auto mb-8"></div>
+          
+          <div className="text-left mt-12 space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">¿Qué significa ser Sugar Daddy en Madrid?</h3>
+              <p className="text-gray-300">Ser un Sugar Daddy en Madrid significa mucho más que ofrecer apoyo económico. Representa una figura de éxito, experiencia y generosidad que busca compartir su estilo de vida con una compañera joven y atractiva. Un Sugar Daddy en Madrid suele ser un profesional consolidado, empresario o ejecutivo que valora la discreción, la elegancia y la compañía sofisticada. Esta relación mutuamente beneficiosa va más allá de lo convencional, ofreciendo tanto apoyo material como experiencias únicas en la capital española.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">¿Qué busca un Sugar Daddy en Madrid?</h3>
+              <div className="ml-6 space-y-4 mt-4">
+                <h4 className="text-xl font-medium">Discreción y Privacidad</h4>
+                <p className="text-gray-300">Para un Sugar Daddy en Madrid, la discreción es un pilar fundamental. Muchos profesionales de alto nivel y empresarios exitosos valoran su privacidad por encima de todo. Un arreglo con un Sugar Daddy madrileño garantiza total confidencialidad, permitiendo mantener separadas las esferas personal y profesional. Esta discreción mutua es lo que hace posible que estas relaciones florezcan en una ciudad cosmopolita como Madrid, donde el anonimato puede ser un bien preciado.</p>
+                
+                <h4 className="text-xl font-medium">Seguridad y Confianza</h4>
+                <p className="text-gray-300">La relación con un Sugar Daddy en Madrid se basa en la confianza mutua desde el primer momento. Un verdadero Sugar Daddy madrileño entiende la importancia de crear un ambiente seguro donde ambas partes se sientan cómodas. Esto incluye acuerdos claros, respeto por los límites establecidos y una comunicación abierta. La seguridad emocional y física es prioritaria, y un Sugar Daddy experimentado sabe cómo construir esta confianza progresivamente, estableciendo una base sólida para una relación satisfactoria y duradera.</p>
+                
+                <h4 className="text-xl font-medium">Estilo de Vida Premium</h4>
+                <p className="text-gray-300">Un Sugar Daddy en Madrid ofrece acceso a un estilo de vida que pocos pueden experimentar: cenas en los restaurantes más exclusivos de la capital, escapadas de fin de semana a destinos de ensueño, asistencia a eventos de alta gala y la oportunidad de disfrutar de los placeres más refinados que la vida puede ofrecer. Este estilo de vida premium no se limita a lo material, sino que incluye también acceso a círculos sociales privilegiados, oportunidades profesionales únicas y la posibilidad de disfrutar de experiencias que de otra manera serían inalcanzables para una joven en Madrid.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -126,15 +148,33 @@ const Index: React.FC = () => {
         </div>
       </section>
 
-      {/* What I Offer Section */}
-      <section className="py-20 bg-gray-900">
+      {/* How to Find Section */}
+      <section id="encontrar" className="py-20 bg-gray-900">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Lo Que Ofrezco</h2>
+            <h2 className="text-4xl font-bold mb-4">¿Cómo encontrar un Sugar Daddy en Madrid?</h2>
             <div className="w-24 h-1 bg-gold-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Una relación donde disfrutarás de experiencias de lujo junto a un hombre exitoso, experimentado y dominante
-            </p>
+            
+            <div className="text-left mt-12 space-y-8">
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">El papel de las Sugar Babies en Madrid</h3>
+                <p className="text-gray-300">En el exclusivo mundo del sugar dating en Madrid, las Sugar Babies desempeñan un papel fundamental. Estas mujeres jóvenes, sofisticadas y ambiciosas buscan más que una relación convencional. Un Sugar Daddy en Madrid valora la compañía de una Sugar Baby que aporte frescura, vitalidad y una conexión genuina. A cambio, ofrecen un estilo de vida de lujo, mentoría y experiencias únicas que van más allá de lo material.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">¿Qué busca una Sugar Baby en un Sugar Daddy madrileño?</h3>
+                <div className="ml-6 space-y-4 mt-4">
+                  <h4 className="text-xl font-medium">Mentoría y Apoyo Personal</h4>
+                  <p className="text-gray-300">Un Sugar Daddy en Madrid no solo ofrece apoyo económico, sino que también comparte su valiosa experiencia de vida. Muchos Sugar Daddies en la capital son empresarios exitosos, ejecutivos o profesionales consolidados que pueden ofrecer orientación profesional, consejos financieros y acceso a redes de contactos exclusivas. Esta mentoría personalizada es uno de los aspectos más valorados por las Sugar Babies que buscan crecer tanto personal como profesionalmente.</p>
+                  
+                  <h4 className="text-xl font-medium">Exclusividad y Estatus Social</h4>
+                  <p className="text-gray-300">En el exclusivo círculo de los Sugar Daddies en Madrid, la discreción y el estatus social son fundamentales. Un Sugar Daddy madrileño valora la exclusividad y busca una Sugar Baby que sepa moverse con elegancia en ambientes de alta sociedad. Esto incluye asistir a eventos exclusivos, cenas de negocios importantes y viajes de lujo, donde la presencia de una compañía refinada y discreta es esencial para mantener su reputación.</p>
+                  
+                  <h4 className="text-xl font-medium">Experiencias de Lujo</h4>
+                  <p className="text-gray-300">Un Sugar Daddy en Madrid ofrece experiencias que van más allá de lo convencional: cenas en restaurantes con estrellas Michelin, escapadas de fin de semana a destinos exclusivos, acceso a eventos VIP y una vida social en los círculos más selectos de la capital. Estas experiencias no solo son memorables, sino que también abren puertas a un estilo de vida que de otra manera sería inaccesible para muchas Sugar Babies.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -182,12 +222,34 @@ const Index: React.FC = () => {
         </div>
       </section>
 
-      {/* Philosophy Section */}
-      <section className="py-20 px-4 bg-black">
+      {/* Relationships Section */}
+      <section id="relaciones" className="py-20 px-4 bg-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Mi Filosofía</h2>
+            <h2 className="text-4xl font-bold mb-4">Tipos de relaciones en el Sugar Dating en Madrid</h2>
             <div className="w-24 h-1 bg-gold-500 mx-auto mb-8"></div>
+            
+            <div className="text-left space-y-6 mt-8">
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Relación de compañía</h3>
+                <p className="text-gray-300">En el contexto de un Sugar Daddy en Madrid, una relación de compañía se basa en la complicidad y el disfrute mutuo. Un Sugar Daddy madrileño valora enormemente la calidad de la conversación y la conexión intelectual. Estas relaciones suelen incluir salidas a eventos culturales, cenas en restaurantes exclusivos y viajes de negocios, donde la compañía de una mujer joven y sofisticada añade valor a sus experiencias. A diferencia de otras modalidades, aquí el énfasis está en la calidad del tiempo compartido más que en compromisos emocionales profundos.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Relación sin compromiso</h3>
+                <p className="text-gray-300">Para muchos Sugar Daddies en Madrid, esta modalidad ofrece la libertad de disfrutar de encuentros esporádicos sin las ataduras de una relación tradicional. Los términos son claros desde el principio: encuentros puntuales, discreción absoluta y beneficios mutuos. Un Sugar Daddy madrileño que opta por esta modalidad suele ser un profesional con una agenda apretada que valora su independencia pero disfruta de la compañía ocasional de una mujer joven y atractiva. La honestidad sobre las expectativas es clave para que esta dinámica funcione satisfactoriamente para ambas partes.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Relación exclusiva</h3>
+                <p className="text-gray-300">Cuando un Sugar Daddy en Madrid busca exclusividad, está dispuesto a ofrecer mayores beneficios a cambio de la dedicación exclusiva de su Sugar Baby. Esta modalidad implica un mayor nivel de compromiso y confianza mutua. Un Sugar Daddy madrileño que elige esta opción suele estar dispuesto a invertir más en la relación, ofreciendo no solo apoyo económico, sino también acceso a su círculo social, viajes internacionales y experiencias únicas. La exclusividad es un valor fundamental en la alta sociedad madrileña, y este tipo de arreglo refleja ese estándar.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Relación seria y a largo plazo</h3>
+                <p className="text-gray-300">Algunos Sugar Daddies en Madrid buscan algo más que una simple transacción; buscan una conexión genuina que pueda evolucionar con el tiempo. Este tipo de relación va más allá de los beneficios materiales, incluyendo apoyo emocional, estabilidad y la posibilidad de construir un futuro juntos. Un Sugar Daddy madrileño que se plantea una relación a largo plazo valora la lealtad, la inteligencia emocional y la capacidad de su compañera para integrarse en su estilo de vida. Aunque menos común, este tipo de relación puede ofrecer seguridad financiera y emocional a largo plazo, con la posibilidad de evolucionar hacia un compromiso más formal si ambas partes lo desean.</p>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-12">
@@ -248,16 +310,71 @@ const Index: React.FC = () => {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section id="beneficios" className="py-20 px-4 bg-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Beneficios de tener un Sugar Daddy en Madrid</h2>
+            <div className="w-24 h-1 bg-gold-500 mx-auto mb-8"></div>
+            
+            <div className="text-left space-y-6 mt-8">
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Estilo de vida de lujo</h3>
+                <p className="text-gray-300">Tener un Sugar Daddy en Madrid significa acceder a un nivel de vida que pocos pueden experimentar. Un Sugar Daddy madrileño ofrece acceso a restaurantes con estrellas Michelin, estancias en hoteles de cinco estrellas y eventos exclusivos de la alta sociedad. Más allá de los beneficios materiales, este estilo de vida incluye acceso a círculos sociales privilegiados, oportunidades de networking de alto nivel y la posibilidad de disfrutar de los placeres más refinados que la capital española puede ofrecer. Un Sugar Daddy en Madrid no solo comparte su riqueza material, sino también su conocimiento del mundo, su experiencia de vida y sus conexiones, permitiéndote crecer tanto personal como profesionalmente.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Experiencias únicas en la capital</h3>
+                <p className="text-gray-300">Un Sugar Daddy en Madrid te abre las puertas a experiencias que van más allá de lo convencional. Imagina cenas privadas en el exclusivo barrio de Salamanca con vistas panorámicas de la ciudad, acceso VIP a eventos de moda en el Palacio de Cibeles o noches en las fiestas más selectas de la Milla de Oro. Un Sugar Daddy madrileño puede ofrecerte asistir a galerías de arte privadas, conciertos íntimos con artistas internacionales o incluso escapadas de fin de semana a las bodegas más exclusivas de La Rioja. Estas experiencias no solo son memorables, sino que también te permiten sumergirte en los círculos más exclusivos de la capital, creando recuerdos que durarán toda la vida.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold mb-3">Relaciones claras y transparentes</h3>
+                <p className="text-gray-300">Una de las mayores ventajas de tener un Sugar Daddy en Madrid es la claridad desde el primer momento. A diferencia de las relaciones convencionales, donde las expectativas a menudo no se comunican, un Sugar Daddy madrileño valora la transparencia en todos los aspectos del acuerdo. Esto significa límites claros, beneficios mutuos definidos y una comunicación abierta sobre lo que cada parte espera de la relación. Esta transparencia elimina malentendidos y crea un marco de respeto mutuo donde ambas partes pueden sentirse cómodas y seguras. Un Sugar Daddy experimentado en Madrid entiende la importancia de establecer estos términos desde el principio, asegurando una relación satisfactoria y sin sorpresas desagradables.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <FaqSection />
+
       {/* Contact Section */}
-      <section id="contacto" className="py-20 px-4">
-        <div className="max-w-3xl mx-auto bg-gray-900 rounded-xl p-8 shadow-2xl">
+      <section id="contacto" className="py-20 px-4 bg-gray-800">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Contáctame</h2>
-            <div className="w-24 h-1 bg-gold-500 mx-auto mb-4"></div>
-            <p className="text-gray-300">
-              Si buscas una relación de respeto mutuo, generosidad y experiencias inolvidables, 
-              estaré encantado de conocerte.
+            <h2 className="text-4xl font-bold mb-4 text-gold-400">Contacto Sugar Daddy Madrid</h2>
+            <div className="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+            <h3 className="text-2xl font-semibold mb-3 text-white">Cómo iniciar una relación Sugar en Madrid</h3>
+            <p className="text-gray-300 max-w-3xl mx-auto mb-8">
+              Si buscas una relación de respeto mutuo, generosidad y experiencias inolvidables con un Sugar Daddy en Madrid, 
+              completa el siguiente formulario. Estaré encantado de conocerte y explorar juntos las posibilidades de una relación 
+              que beneficie a ambas partes con transparencia y elegancia.
             </p>
+            
+            <div className="bg-gray-900 rounded-xl p-6 mb-8 text-left">
+              <h4 className="text-xl font-semibold text-gold-400 mb-3">Proceso de contacto seguro y discreto:</h4>
+              <ol className="list-decimal list-inside space-y-2 text-gray-300">
+                <li><span className="font-medium">Completa el formulario</span> con tus datos básicos</li>
+                <li>Recibirás una respuesta en un plazo máximo de 24-48 horas</li>
+                <li>Concertaremos una primera conversación para conocernos mejor</li>
+                <li>Si hay conexión, acordaremos una primera cita en un lugar discreto y exclusivo de Madrid</li>
+              </ol>
+            </div>
+            
+            <h3 className="text-2xl font-semibold mb-3 text-white mt-12">Discreción y privacidad garantizada</h3>
+            <div className="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+            <div className="bg-gray-900 rounded-xl p-6 mb-8">
+              <p className="text-gray-300 mb-4">
+                Como Sugar Daddy experimentado en Madrid, tu privacidad es mi máxima prioridad. Toda la información que compartas 
+                será tratada con la máxima confidencialidad y solo se utilizará para establecer contacto contigo.
+              </p>
+              <div className="flex items-center justify-center space-x-4 text-gold-400 mt-4">
+                <Lock className="w-5 h-5" />
+                <span>Sin compartir tu información con terceros</span>
+              </div>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
