@@ -74,8 +74,15 @@ const Index: React.FC = () => {
             Para mujeres jóvenes que buscan un hombre maduro (36 años), exitoso y generoso que valore tu compañía y esté dispuesto a ofrecerte un estilo de vida de lujo junto a alguien dominante y experimentado como Suggar Daddy en Madrid
           </p>
           <a 
-            href="http://localhost:8081/#"
+            href="#"
             className="bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-flex items-center"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+              });
+            }}
           >
             <Mail className="mr-2" size={20} /> Contáctame
           </a>
@@ -469,7 +476,19 @@ const Index: React.FC = () => {
             <span>•</span>
             <a href="#" className="hover:text-gold-400 transition">Política de Privacidad</a>
             <span>•</span>
-            <a href="#" className="hover:text-gold-400 transition">Contacto</a>
+            <a 
+              href="#" 
+              className="hover:text-gold-400 transition"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  behavior: 'smooth'
+                });
+              }}
+            >
+              Contacto
+            </a>
           </div>
         </div>
       </footer>
